@@ -1,3 +1,170 @@
+/* =============== GENERAL =============== */
 body {
-   font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    margin: 0 0 0 50px;
+    padding: 0;
+}
+
+/* =============== TEXT =============== */
+p {
+    color: #808080;
+}
+/* Main Headings */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+}
+#cr-oh h2, #cr-oh span {
+    color: #3ea4dc;
+}
+#cr-pv h2, #cr-pv span {
+    color: #ffa339;
+}
+#cr-ac h2, #cr-ac span {
+    color: #87c457;
+}
+#cr-digitalprint h2, #cr-digitalprint span {
+    color: #e4185b;
+}
+#cr-editorial h2, #cr-editorial span {
+    color: #da282e;
+}
+#cr-logofolio h2, #cr-logofolio span {
+    color: #8c49b7;
+}
+#cr-contact h2, #cr-contact span {
+    color: #2f41c9;
+}
+#cr-contact h2 {
+    text-transform: capitalize;
+}
+.slide span {
+    font-weight: 600;
+}
+/* Sub Heading */
+h3 {
+    color: #808080;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+/* Intro description */
+h4 {
+    color: #808080; 
+    font-size: 21px;
+}
+
+
+
+
+
+/* =============== HEADER =============== */
+header {
+    background-color: #eeeff2;
+    z-index: 9010;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 100%;
+
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+header .cr-sidebar {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+header .cr-sidebar i {
+    background-color: #ffffff;
+    border-radius: 50%;
+    box-shadow: 2px 2px 3px rgba(47, 65, 201, 0.3);
+    color: #2f41c9;
+    height: 38px;
+    margin-top: 20px;
+    margin-left: -14px;
+    margin-bottom: 110px;
+    padding: 12px;
+}
+header .cr-name-sidebar {
+    color: #2f41c9;
+    letter-spacing: .02em;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    transform: rotate(-90deg);
+}
+header .navbar-brand {
+    margin-left: -2px;
+    margin-bottom: 20px;
+}
+
+
+
+
+/* === TOGGLED NAV MENU
+nav .navbar-nav a {
+    color: #2f41c9;
+    font-size: 18px;
+}
+nav li i {
+    color: #bfccf7;
+}
+*/
+
+/* =============== PROJECT BUTTONS =============== */
+a .project-btn {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #808080;
+    padding: 30px 20px;
+    background-color: #ffffff;
+}
+#cr-oh a .project-btn {
+    border: solid 1px #3ea4dc;
+}
+#cr-oh a .project-btn i {
+    color: #3ea4dc;
+}
+#cr-pv a .project-btn {
+    border: solid 1px #ffa339;
+}
+#cr-pv a .project-btn i {
+    color: #ffa339;
+}
+#cr-ac a .project-btn {
+    border: solid 1px #87c457;
+}
+#cr-ac a .project-btn i {
+    color: #87c457;
+}
+#cr-editorial i {
+    color: #da282e;
+}
+#cr-editorial a .project-btn {
+    border: solid 1px #da282e;
+}
+#cr-editorial a .project-btn i {
+    color: #da282e;
+}
+#cr-contact i {
+    color: #2f41c9;
+}
+
+.logo-list {
+    text-transform: uppercase;
+}
+
+
+
+/* =============== PROJECTS =============== */
+
+.display-img img {
+    background-color: #eeeff2;
+}
+
+.project-text-wrapper {
+    padding: 50px 30px 30px 60px;
 }
