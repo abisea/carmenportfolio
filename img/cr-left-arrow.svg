@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="19px" viewBox="0 0 11 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>cr-left-arrow</title>
+    <g id="cr-left-arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M10.378,1.923 L3.247,9.053 L10.378,16.183 C10.486,16.292 10.559,16.455 10.559,16.6 C10.559,16.745 10.486,16.909 10.378,17.018 L9.471,17.924 C9.361,18.033 9.198,18.106 9.054,18.106 C8.908,18.106 8.745,18.033 8.636,17.924 L0.182,9.47 C0.072,9.361 0,9.198 0,9.053 C0,8.908 0.072,8.744 0.182,8.635 L8.636,0.181 C8.745,0.072 8.908,0 9.054,0 C9.198,0 9.361,0.072 9.471,0.181 L10.378,1.088 C10.486,1.197 10.559,1.342 10.559,1.506 C10.559,1.651 10.486,1.814 10.378,1.923" fill="#BFC2D0"></path>
+    </g>
+</svg>
