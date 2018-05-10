@@ -11,7 +11,7 @@
     
     <!--  DEVELOPMENT - ENVIRONMENT-->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     
     <!-- Ekko Lightbox CSS -->
     <link rel="stylesheet" href="css/ekko-lightbox.css"> 
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,600|Playfair+Display:700,900" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -598,7 +598,7 @@
 
       <div id="cr-co">
         <div class="row">
-          <div class="col-11 mb-4">
+          <div class="col-11 mb-5">
             <div class="project-text-wrapper">
               <h2>carmen re&aacute;tegui</h2>
               <h3>digital designer</h3>
@@ -612,7 +612,7 @@
                 <div class="col-md-7 col-sm-12">
                   <p class="cr-skills"><span class="cr-blue"><strong>SOFTWARE, SKILLS & TOOLS</strong></span><br>
                     - Illustrator, Photoshop, Indesign, Sketch, Invision<br>
-                    - HTML, CSS, Bootstrap 3&4, SVG Animation Gsap<br>
+                    - HTML, CSS, Bootstrap 3&4<!--, SVG Animation Gsap--><br>
                     - Wordpress, Mailchimp, Postmark<br>
                     - Git, Github, Visual Studio Code</p>
                 
@@ -651,38 +651,12 @@
     
     <!-- DEVELOPMENT - ENVIRONMENT -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>-->
+    <!-- <script src="js/popper.min.js"></script>-->
+    <!-- <script src="js/bootstrap.min.js"></script>-->
 
     <!-- Ekko LightBox JS -->
     <script src="js/ekko-lightbox.js"></script>
-
-    <!-- GSAP JS -->
-    <script src="js/gsap/TweenLite.js"></script>
-    <script src="js/gsap/plugins/CSSPlugin.js"></script>
-    <script src="js/gsap/easing/EasePack.js"></script>
-
-    <!-- GSAP scripts-->
-    <script type="text/javascript">
-      var crD = document.getElementById("crD");
-      var crIg = document.getElementById("crIg");
-      var crItal = document.getElementById("crItal");
-      TweenLite.from([crD, crIg, crItal], 2, { opacity:0, delay:.5 });
-
-      var crI = document.getElementById("crI");
-      TweenLite.from(crI, 1.1, {ease: Bounce.easeOut, y: -360, delay:1.2 });
-
-      var crDes = document.getElementById("crDes");
-      TweenLite.from(crDes, 0.8, { ease: Back.easeOut.config(1.1), x: -250, delay:2.4 });
-
-      var crNer = document.getElementById("crNer");
-      TweenLite.from(crNer, 0.9, { ease: Back.easeOut.config(1.1), x: 630, delay:3.1 });
-
-      var crIntro = document.getElementById("crIntro");
-      TweenLite.from(crIntro, 1, { ease: Power2.easeOut, y: 430, delay:3.5 });
-    </script>
-
 
     <!-- ekkoLightbox -->
     <script type="text/javascript"> 
@@ -730,8 +704,32 @@
 	</script>
   
 
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
+ <!-- GSAP JS 
+    <script src="js/gsap/TweenLite.js"></script>
+    <script src="js/gsap/plugins/CSSPlugin.js"></script>
+    <script src="js/gsap/easing/EasePack.js"></script>
+
+    //GSAP script
+    <script type="text/javascript">
+      var crD = document.getElementById("crD");
+      var crIg = document.getElementById("crIg");
+      var crItal = document.getElementById("crItal");
+      TweenLite.from([crD, crIg, crItal], 2, { opacity:0, delay:.5 });
+
+      var crI = document.getElementById("crI");
+      TweenLite.from(crI, 1.1, {ease: Bounce.easeOut, y: -360, delay:1.2 });
+
+      var crDes = document.getElementById("crDes");
+      TweenLite.from(crDes, 0.8, { ease: Back.easeOut.config(1.1), x: -250, delay:2.4 });
+
+      var crNer = document.getElementById("crNer");
+      TweenLite.from(crNer, 0.9, { ease: Back.easeOut.config(1.1), x: 630, delay:3.1 });
+
+      var crIntro = document.getElementById("crIntro");
+      TweenLite.from(crIntro, 1, { ease: Power2.easeOut, y: 430, delay:3.5 });
+    </script>
+      -->
+
 
   </body>
 </html>
