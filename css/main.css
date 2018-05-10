@@ -43,10 +43,6 @@ body {
     max-width: 1400px;
 }
 
-
-
-
-
 ul {
     list-style-type: none;
     margin: 0;
@@ -59,6 +55,7 @@ input:focus,
 textarea:focus {
 outline: none;
 }
+
 
 /* =============== BS CAROUSEL =============== */
 
