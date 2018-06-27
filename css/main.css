@@ -56,7 +56,9 @@ textarea:focus {
 outline: none;
 }
 
-
+hr {
+    color: red !Important;
+}
 /* =============== BS CAROUSEL =============== */
 
 .carousel-control-prev-icon {
@@ -85,7 +87,7 @@ outline: none;
 /* =============== TEXT =============== */
 
 /* Headings */
-h1, h2, h3, h4, h5, h6, p, .figure-caption, ul li, table {
+h1, h2, h3, h4, h5, h6, p, .figure-caption, ul li, table, .modal-content {
     font-style: normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; /* improves text readability */
@@ -551,6 +553,39 @@ i {
 
 
 
+/* Medium up screens 
+@media screen and (min-width: 768px) {
+    .cr-intro-grid {
+        display: grid;
+        grid-template-columns: 0.5fr 0.5fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-image: url('../img/CR-bg.jpg');
+        background-size: 48vw auto;
+        background-repeat: no-repeat;
+        background-position: right;
+        justify-items: center;
+    }
+    .cr-intro-grid h4 {
+        padding: 10px;
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+    }
+    .cr-intro-grid svg#crDdSvg {
+        margin: 0;
+        grid-column: 3 / 5;
+        grid-row: 2 / 4;
+        max-width: 85vw;
+    }
+    .cr-intro-grid img#cr-bg-img {
+        display: none;
+    }
+    .cr-intro-grid img#cr-down {
+        display: none;
+    }
+}
+*/
+
+
 /* =============== PROJECTS =============== */
 
 .display-img {
@@ -630,7 +665,7 @@ a.project-btn:active {
 } 
 .row-dp {
     margin: 0 5%;
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 }
 @media screen and (max-width: 768px) {
     .row-dp {
@@ -655,15 +690,27 @@ figure {
 	overflow: hidden;
 }
 .modal-content {
-    background-color: none !important;
+    background-color: transparent !important;
     border: none !important;
     border-radius: 0 !important;
+    color: #ffffff;
+    font-size: 1.3rem;
+    text-shadow: 2px 2px 12px rgba(0,0,0, 0.1); /*shadow on arrows*/
+    
 }
 .modal-body {
     max-width: 650px !important;
     max-height: 500px !important;
     padding: 0 !important;
 }
+
+/* modal footer caption */
+.modal-footer {
+    border: none;
+    justify-content: center;
+    text-shadow: 2px 2px 12px rgba(0,0,0, 0.2); /*shadow on footer text*/
+}
+
 /* =============== EDITORIAL DESIGN =============== */
 @media screen and (min-width: 992px) {
     .project-btn-wrapper {
@@ -746,9 +793,11 @@ ul.cr-nav-social {
 .cr-nav-social li i:hover {
 box-shadow: 0px 0px 5px rgba(47, 65, 201, 0.7);
 }
+/* my photo portrait*/
 #cr-co img {
-    max-width: 160px;
+    max-width: 180px;
 }
+
 @media screen and (max-width: 575px) {
     #cr-co img {
         max-width: 140px;
