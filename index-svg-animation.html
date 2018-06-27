@@ -11,7 +11,7 @@
     
     <!--  DEVELOPMENT - ENVIRONMENT-->
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
     
     <!-- Ekko Lightbox CSS -->
     <link rel="stylesheet" href="css/ekko-lightbox.css"> 
@@ -23,7 +23,7 @@
     <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,600|Playfair+Display:700,900" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> 
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
     <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Favicon -->
@@ -143,12 +143,12 @@
 
 
         <img id="cr-bg-img" src="img/CR-bg.jpg" class="img-fluid" alt="photo bg">
-        <img id="cr-down" src="img/cr-down-arrow.svg" class="img-fluid" alt="arrow down">
+        <img id="cr-down" src="img/cr-down-arrow-1.svg" class="img-fluid" alt="arrow down">
     </div> <!-- /. cr-intro-grid  -->
 	</div> <!-- row -->
 
 
-<hr>
+
     <!-- OH Web App -->
     <div id="cr-oh">
         <div class="row">
@@ -161,7 +161,7 @@
                   managing inventory, payments, and set automatic reminders.</p>
 
                 <p><span class="cr-blue"><strong>Key goal</strong></span><br>
-                  Design and prototype a web app for patients to schedule appointments online. This is meant to create a 
+                  Design and develop a web app for patients to schedule appointments online. This is meant to create a 
                   better experience for patients by offering a simple and flexible way to schedule with their doctors 24/7. </p>
                     
                 <p><span class="cr-blue"><strong>Responsabilities</strong></span><br>
@@ -176,7 +176,7 @@
         </div>
       </div> <!-- /. container  -->
 
-<hr>
+
       <!-- PV Website -->
       <div id="cr-pv">
         <div class="row">
@@ -189,12 +189,13 @@
                   located on the Bay of Los Organos, in northern Perú.</p>
 
                 <p><span class="cr-blue"><strong>Key goal</strong></span><br>
-                  Redesign their website and add a new area for users to check availability and book online.</p>
+                  Website redesign and development, adding a new area for users to check availability and book online.
+                </p>
                     
                 <p><span class="cr-blue"><strong>Responsabilities</strong></span><br>
                   User experience & visual design (wireframe, prototype)<br>
                   Front-end (html, css, bootstrap, wordpress)</p>
-                <div class="project-btn-wrapper mt-5 mb-3"><a class="project-btn" href="//puntaveleros.com/home">view website &nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
+                <div class="project-btn-wrapper mt-5 mb-3"><a class="project-btn" target="_blank" href="http://puntaveleros.com/home">view website &nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
               </div>
             </div>
             <div class="col-sm display-img">
@@ -203,7 +204,7 @@
         </div>
       </div> <!-- /. container  -->
  
-<hr>
+
       <!-- AC Website -->
       <div id="cr-ac">
         <div class="row">
@@ -220,7 +221,7 @@
                   
               <p><span class="cr-blue"><strong>Responsabilities</strong></span><br>
                 Visual design & wordpress theme customization</p>
-              <div class="project-btn-wrapper mt-5 mb-3"><a class="project-btn" href="http://aventuracanina.com">view website &nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
+              <div class="project-btn-wrapper mt-5 mb-3"><a class="project-btn" target="_blank" href="http://aventuracanina.com">view website &nbsp;<i class="fa fa-long-arrow-right"></i></a></div>
             </div>
           </div>
           <div class="col-sm display-img">
@@ -229,10 +230,10 @@
         </div>
       </div> <!-- /. container  -->
 
-<hr>
+
       <!-- Digital + Print -->
       <div id="cr-dp">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             <div class="project-text-wrapper">
               <h2>digital + print</h2>
@@ -246,72 +247,86 @@
       <div class="row row-dp">
         <div class="col-xs-12">
           <div class="row hover-dp">
-            <a href="img/DP-OH-anim.gif" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
-                <figure><img src="img/DP-OH-anim.gif" class="img-fluid" alt="OH gif animation"></figure>                
+            <a href="img/DP-OH-anim.gif" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="gif animation" class="col-4 col-sm-3 col-md-2">
+              <figure><img src="img/DP-OH-anim.gif" class="img-fluid" alt="OH gif animation"></figure>                
             </a>
 
-            <a href="img/DP-OH-flyer-1.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-OH-flyer-1.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="flyer" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-OH-flyer-1.jpg" class="img-fluid" alt="OH flyer"></figure>                 
             </a>
 
-            <a href="img/DP-dbp-cards.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <!-- elements not showing use data-remote -->
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-styleguide.jpg" data-footer="website style guide"></div>                
+
+            <a href="img/DP-dbp-cards.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="business cards" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-dbp-cards.jpg" class="img-fluid" alt="DBP business cards"></figure>          
             </a>
 
-            <a href="img/DP-dbp-savetd.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-dbp-savetd.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="email Save the Date" class="col-4 col-sm-3 col-md-2">
               <figure><img src="img/DP-dbp-savetd.jpg" class="img-fluid" alt="DBP save the date"></figure>
             </a>
 
             <!-- elements not showing use data-remote -->
-            <div data-toggle="lightbox" data-gallery="resaltes-gallery" data-remote="img/DP-dbp-ticket.jpg" data-footer=""></div>
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-dbp-ticket.jpg" data-footer="ticket"></div>
 
-            <a href="img/DP-k-taza.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-k-taza.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="branded mug" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-k-taza.jpg" class="img-fluid" alt="mug with logo"></figure>       
             </a>
           
-            <a href="img/DP-s-revista.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-s-revista.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="magazine menu" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-s-revista.jpg" class="img-fluid" alt="magazine"></figure>                
             </a>
 
-            <a href="img/DP-fp-cards.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-fp-cards.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="business cards" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-fp-cards.jpg" class="img-fluid" alt="FP business cards"></figure>
             </a>
 
-            <a href="img/DP-fp-maps-1a.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-fp-maps-1a.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="map illustration" class="col-4 col-sm-3 col-md-2">
               <figure><img src="img/DP-fp-maps-1a.jpg" class="img-fluid" alt="map illustration of peru"></figure>
             </a>
 
             <!-- elements not showing use data-remote -->
-            <div data-toggle="lightbox" data-gallery="resaltes-gallery" data-remote="img/DP-fp-maps-2a.jpg" data-footer=""></div>                
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-fp-maps-2a.jpg" data-footer="map illustration"></div>                
             
-            <a href="img/DP-cwc.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-cwc.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="branding" class="col-4 col-sm-3 col-md-2">
                 <figure><img src="img/DP-cwc.jpg" class="img-fluid" alt="CWC logo display"></figure>
             </a>
 
-            <a href="img/DP-ac-flyer.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
+            <a href="img/DP-ac-flyer.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="print flyer" class="col-4 col-sm-3 col-md-2">
               <figure><img src="img/DP-ac-flyer.jpg" class="img-fluid" alt="AC flyer for print"></figure>
             </a>
-    
+
             <!-- elements not showing use data-remote -->
-            <div data-toggle="lightbox" data-gallery="resaltes-gallery" data-remote="img/DP-ac-sello-anim.gif" data-footer=""></div>
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-ac-social-1.jpg" data-footer="instagram graphic"></div>
 
-            <a href="img/DP-ac-social.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
-              <figure><img src="img/DP-ac-social.jpg" class="img-fluid" alt="AC design for Instagram"></figure>
+
+            <!-- elements not showing use data-remote -->
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-ac-sello-anim.gif" data-footer="gif animation"></div>
+
+            <a href="img/DP-recipe-acp.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="personal project" class="col-4 col-sm-3 col-md-2">
+              <figure><img src="img/DP-recipe-acp.jpg" class="img-fluid" alt="a family recipe"></figure>
+              </a>
+
+            <a href="img/DP-po-f.jpg" data-toggle="lightbox" data-gallery="digitalprint-gallery" data-footer="label design" class="col-4 col-sm-3 col-md-2">
+              <figure><img src="img/DP-po-f.jpg" class="img-fluid" alt="PO label design"></figure>
             </a>
 
-            <a href="img/DP-recipe-acp.jpg" data-toggle="lightbox" data-gallery="resaltes-gallery" data-footer="" class="col-4 col-sm-3 col-md-2">
-            <figure><img src="img/DP-recipe-acp.jpg" class="img-fluid" alt="a family recipe"></figure>
-            </a>
+            <!-- elements not showing use data-remote -->
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-po-g.jpg" data-footer="label design"></div>
+
+            <!-- elements not showing use data-remote -->
+            <div data-toggle="lightbox" data-gallery="digitalprint-gallery" data-remote="img/DP-vd.jpg" data-footer="facebook invitation"></div>
+
           </div>
         </div>
       </div> <!-- ./row -->
         
       
 
-<hr>
+
 
       <div id="cr-ed">
-        <div class="row mb-5">
+        <div class="row mb-5 pb-5">
 
           <div class="col-12 col-sm-5">
             <div class="project-text-wrapper">
@@ -350,7 +365,7 @@
           <div class="col-12 col-sm-7">
             <div class="ebook-wrapper">
               <p class="mb-0">Conversion to Kindle ebook<br>
-              pdf&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;epub&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;mobi</p>
+              indd&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;epub&nbsp;<i class="fa fa-arrow-circle-right"></i>&nbsp;mobi</p>
               <img src="img/ED-kindle.jpg" class="img-fluid" alt="Espiritu letra in kindle version">
               <div class="project-btn-wrapper">
                 <a class="project-btn" href="https://amzn.com/B01M10LFX3">view in kindle store &nbsp;<i class="fa fa-long-arrow-right"></i></a>
@@ -361,11 +376,11 @@
         </div> <!-- /. row  -->  
       </div> <!-- /. container  -->
 
-<hr>
+
       
       <!-- LOGOFOLIO -->
       <div id="cr-lo">
-        <div class="row">
+        <div class="row mt-5 mb-5 pb-5">
 
           <div class="col-12 col-sm-5">
             <div class="project-text-wrapper">
@@ -594,11 +609,11 @@
         </div><!-- /. row  -->
       </div> <!-- /. container  -->
 
-<hr>
+
 
       <div id="cr-co">
-        <div class="row">
-          <div class="col-11 mb-5">
+        <div class="row mt-5">
+          <div class="col-11 mb-4">
             <div class="project-text-wrapper">
               <h2>carmen re&aacute;tegui</h2>
               <h3>digital designer</h3>
@@ -609,13 +624,22 @@
               </p>
               
               <div class="row">              
-                <div class="col-md-7 col-sm-12">
-                  <p class="cr-skills"><span class="cr-blue"><strong>SOFTWARE, SKILLS & TOOLS</strong></span><br>
-                    - Illustrator, Photoshop, Indesign, Sketch, Invision<br>
-                    - HTML, CSS, Bootstrap 3&4, SVG Animation Gsap<br>
-                    - Wordpress, Mailchimp, Postmark<br>
-                    - Git, Github, Visual Studio Code</p>
-                
+                <div class="col-md-8 col-sm-12">
+                  <p class="cr-skills"><span class="cr-blue"><strong>SOFTWARE & TOOLS</strong></span><br>
+                    - Illustrator, Photoshop, Indesign<br>
+                    - Invision, Sketch, UXPin<!--, Balsamiq--><br>
+                    - HTML, CSS, Bootstrap<br>
+                    - Wordpress, PHP<!--, Javascript, JQuery--><br>
+                    - Git, Github, Visual Studio Code<br>
+                    - Mailchimp, Postmark
+                  </p>
+                  <p class="cr-skills"><span class="cr-blue"><strong>SKILLS</strong></span><br>
+                    User Experience & Interface design, HTML & CSS responsive web development, 
+                    PHP & Wordpress custom themes, Branding & Identity, Email template design & development,
+                    Social Media graphics, Gif animation <!--SVG animation Gsap-->
+                    <!--mvc web app front-end development-->                  
+                  </p>
+                  
                   <ul class="cr-nav-social">
                     <li><a href="//codepen.io/carmen-"><i class="fa fa-codepen"></i></a></li>
                     <li><a href="//github.com/abisea"><i class="fa fa-github" style="margin: 0.5em;"></i></a></li>
@@ -625,7 +649,7 @@
       
                   </ul> 
                 </div> <!-- ./col -->
-                <div class="col-md-5 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                   <img src="img/CR-1.jpg">
                 </div> <!-- ./col -->
               </div><!-- row-->
@@ -651,38 +675,12 @@
     
     <!-- DEVELOPMENT - ENVIRONMENT -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script>-->
+    <!-- <script src="js/popper.min.js"></script>-->
+    <!-- <script src="js/bootstrap.min.js"></script>-->
 
     <!-- Ekko LightBox JS -->
     <script src="js/ekko-lightbox.js"></script>
-
-    <!-- GSAP JS -->
-    <script src="js/gsap/TweenLite.js"></script>
-    <script src="js/gsap/plugins/CSSPlugin.js"></script>
-    <script src="js/gsap/easing/EasePack.js"></script>
-
-    <!-- GSAP scripts-->
-    <script type="text/javascript">
-      var crD = document.getElementById("crD");
-      var crIg = document.getElementById("crIg");
-      var crItal = document.getElementById("crItal");
-      TweenLite.from([crD, crIg, crItal], 2, { opacity:0, delay:.5 });
-
-      var crI = document.getElementById("crI");
-      TweenLite.from(crI, 1.1, {ease: Bounce.easeOut, y: -360, delay:1.2 });
-
-      var crDes = document.getElementById("crDes");
-      TweenLite.from(crDes, 0.8, { ease: Back.easeOut.config(1.1), x: -250, delay:2.4 });
-
-      var crNer = document.getElementById("crNer");
-      TweenLite.from(crNer, 0.9, { ease: Back.easeOut.config(1.1), x: 630, delay:3.1 });
-
-      var crIntro = document.getElementById("crIntro");
-      TweenLite.from(crIntro, 1, { ease: Power2.easeOut, y: 430, delay:3.5 });
-    </script>
-
 
     <!-- ekkoLightbox -->
     <script type="text/javascript"> 
@@ -691,6 +689,31 @@
       $(this).ekkoLightbox();
       });
   </script>
+
+    <!-- GSAP JS -->
+    <script src="js/gsap/TweenLite.js"></script>
+    <script src="js/gsap/plugins/CSSPlugin.js"></script>
+    <script src="js/gsap/easing/EasePack.js"></script>
+
+    <!-- GSAP scripts-->
+    <script type="text/javascript">
+    var crD = document.getElementById("crD");
+    var crIg = document.getElementById("crIg");
+    var crItal = document.getElementById("crItal");
+    TweenLite.from([crD, crIg, crItal], 2, { opacity:0, delay:.5 });
+
+    var crI = document.getElementById("crI");
+    TweenLite.from(crI, 1.1, {ease: Bounce.easeOut, y: -360, delay:1.2 });
+
+    var crDes = document.getElementById("crDes");
+    TweenLite.from(crDes, 0.8, { ease: Back.easeOut.config(1.1), x: -250, delay:2.4 });
+
+    var crNer = document.getElementById("crNer");
+    TweenLite.from(crNer, 0.9, { ease: Back.easeOut.config(1.1), x: 630, delay:3.1 });
+
+    var crIntro = document.getElementById("crIntro");
+    TweenLite.from(crIntro, 1, { ease: Power2.easeOut, y: 430, delay:3.5 });
+    </script>
 
   <script type="text/javascript">
       // ZOOM ICON OVER IMAGES
@@ -712,7 +735,7 @@
       }, "slow");
       });
       });
-	</script>
+    </script>
 
 	<!-- JQuery to Toogle Bootstrap Menu FontAwesome Icon - from fa-bar to fa-closed -->
 	<script type="text/javascript">
@@ -728,10 +751,6 @@
 		$('.navbar-toggler i').toggleClass('fa-times fa-bars');
 		});
 	</script>
-  
-
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
 
   </body>
 </html>
