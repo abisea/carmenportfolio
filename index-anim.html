@@ -691,6 +691,31 @@
       });
   </script>
 
+   <!-- GSAP JS -->
+   <script src="js/gsap/TweenLite.js"></script>
+   <script src="js/gsap/plugins/CSSPlugin.js"></script>
+   <script src="js/gsap/easing/EasePack.js"></script>
+
+   <!-- GSAP scripts-->
+   <script type="text/javascript">
+   var crD = document.getElementById("crD");
+   var crIg = document.getElementById("crIg");
+   var crItal = document.getElementById("crItal");
+   TweenLite.from([crD, crIg, crItal], 2, { opacity:0, delay:.5 });
+
+   var crI = document.getElementById("crI");
+   TweenLite.from(crI, 1.1, {ease: Bounce.easeOut, y: -360, delay:1.2 });
+
+   var crDes = document.getElementById("crDes");
+   TweenLite.from(crDes, 0.8, { ease: Back.easeOut.config(1.1), x: -250, delay:2.4 });
+
+   var crNer = document.getElementById("crNer");
+   TweenLite.from(crNer, 0.9, { ease: Back.easeOut.config(1.1), x: 630, delay:3.1 });
+
+   var crIntro = document.getElementById("crIntro");
+   TweenLite.from(crIntro, 1, { ease: Power2.easeOut, y: 430, delay:3.5 });
+   </script>
+
   <script type="text/javascript">
       // ZOOM ICON OVER IMAGES
       $(function() {
