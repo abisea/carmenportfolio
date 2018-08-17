@@ -1,5 +1,5 @@
 # carmenportfolio
-Carmen Reategui - Portfolio Website on Github Pages
+Portfolio Website on Github Pages
 
 https://abisea.github.io/carmenportfolio/
 
