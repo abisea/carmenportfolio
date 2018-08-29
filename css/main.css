@@ -87,7 +87,7 @@ hr {
 /* =============== TEXT =============== */
 
 /* Headings */
-h1, h2, h3, h4, h5, h6, p, .figure-caption, ul li, table, .modal-content {
+h1, h2, h3, h4, h5, h6, p, .figure-caption, ul li, table, .modal-content, .cr-contact-form {
     font-style: normal;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; /* improves text readability */
@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6, p, .figure-caption, ul li, table, .modal-content {
 }
 
 p {
-    color: #6D7597;
+    color: #6d7597;
     font-size: 1.05rem;
     line-height: 1.4rem;
 }
@@ -111,11 +111,6 @@ h2 {
 /* Sub Heading */
 h3 {
     color: #7f88a5;
-    font-size: 1.4rem;
-    text-transform: uppercase;
-}
-/* Project - company name */
-h3.project-client {
     font-size: 1.5rem;
 }
 /* Sub Heading bottom line */
@@ -140,9 +135,14 @@ h4 span {
     font-weight: 900;
 }
 
+h5 {
+    color: #7f88a5;
+    font-size: 1.15em;
+    line-height: 1.5rem;
+}
 
 
-#cr-co h2 {
+#cr-ab h2 {
     text-transform: capitalize;
 }
 .slide span {
@@ -339,7 +339,7 @@ i {
         text-decoration: none;
     }
     header .cr-nav-list a:hover {
-    color: #7187f4;
+        color: #7187f4;
     }
     header .cr-nav-list a:active {
         color: #7187f4;
@@ -355,8 +355,8 @@ i {
         border-radius: 50%;
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
         color: #2f41c9;
-        height: 38px;
-        padding: 12px;
+        height: 42px;
+        padding: 14px;
         font-size: 1em;
     }
     header .cr-nav-social li i:hover {
@@ -400,14 +400,15 @@ i {
         border-radius: 50%;
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
         color: #2f41c9;
-        height: 38px;
-        padding: 12px;
+        height: 42px;
+        padding: 14px;
         font-size: 1em;
     }
     header .cr-nav-social li i:hover {
     box-shadow: 0px 0px 5px rgba(47, 65, 201, 0.7);
     }
 }
+
 
 @media screen and (min-width: 768px) {
     header .cr-menu-open {  
@@ -445,8 +446,8 @@ i {
         border-radius: 50%;
         box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.3);
         color: #2f41c9;
-        height: 38px;
-        padding: 12px;
+        height: 42px;
+        padding: 14px;
         font-size: 1em;
     }
     header .cr-nav-social li i:hover {
@@ -760,7 +761,7 @@ figure {
 }
 .logo-list {
     text-transform: uppercase;
-    color: #a7abbe; /* gray=70% */
+    color: #a7abbe; 
     font-size: .85rem;
 }
 #cr-lo svg {
@@ -773,43 +774,58 @@ figure {
     margin: 0 auto;
 }
 
-/* =============== CONTACT =============== */
+/* =============== ABOUT =============== */
 p.cr-skills {
     font-size: .95rem;
-    line-height: 1.3rem;
-    margin-top: .3em;
+    line-height: 1.35rem;
+    margin-top: 1rem;
     letter-spacing: .01em;
 }
 
-ul.cr-nav-social {
-    margin-top: 2em;
-}
-.cr-nav-social li {
-    display: inline-block;
-}
-.cr-nav-social li i{
-    background-color: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);
-    color: #2f41c9;
-    height: 38px;
-    padding: 12px;
-    font-size: 1em;
-}
-.cr-nav-social li i:hover {
-box-shadow: 0px 0px 5px rgba(47, 65, 201, 0.7);
-}
 /* my photo portrait*/
-#cr-co img {
+#cr-ab img {
     max-width: 180px;
+    margin-top: 1rem;
 }
 
 @media screen and (max-width: 575px) {
-    #cr-co img {
+    #cr-ab img {
         max-width: 140px;
         padding-top: 20px;
     }
 }
+
+
+
+/* =============== CONTACT =============== */
+.sub-contact {
+    font-size: 1.2rem;
+}
+#cr-co .cr-nav-social li {
+    display: inline-block;
+}
+#cr-co .cr-nav-social li i{
+    background-color: #e4e6eb;
+    border-radius: 50%;
+    /*box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.4);*/
+    color: #2f41c9;
+    height: 46px;
+    padding: 16px;
+    font-size: 1em;
+}
+#cr-co .cr-nav-social li i:hover {
+box-shadow: 0px 0px 5px rgba(47, 65, 201, 0.7);
+}
+#cr-co img {
+    max-width: 200px;
+}
+@media screen and (max-width: 767px) {
+    #cr-co .cr-contact-social {
+        margin-top: 5rem;
+    }
+}
+
+
 .cr-nav-social button {
     border: none !important;
     padding: 0;
@@ -827,7 +843,135 @@ box-shadow: 0px 0px 5px rgba(47, 65, 201, 0.7);
 #cr-nav-me span {
     color: #2f41c9;
 }
+/* =============== CONTACT FORM =============== */
 
+.form-label-group {
+position: relative;
+margin-bottom: 1rem;
+}
+
+input#name, input#inputEmail, textarea#message {
+font-size: 1.05rem;
+color: #6d7597;
+letter-spacing: .02rem;
+}
+
+.form-label-group > input,
+.form-label-group > label {
+padding: 13px;
+}
+
+.form-label-group > label {
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 100%;
+margin-bottom: 0; /* Override default `<label>` margin */
+line-height: 1.5;
+font-size: 1.05rem;
+color: #6d7597;
+cursor: text; /* Match the input under the label */
+border: 1px solid transparent;
+border-radius: .25rem;
+transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder,
+.form-label-group textarea::-webkit-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder,
+.form-label-group textarea:-ms-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder,
+.form-label-group textarea::-ms-input-placeholder {
+color: transparent;
+}
+
+.form-label-group input::-moz-placeholder,
+.form-label-group textarea::-moz-placeholder {
+color: transparent;
+}
+
+.form-label-group input::placeholder,
+.form-label-group textarea::placeholder {
+color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown),
+.form-label-group textarea:not(:placeholder-shown) {
+padding: 20px 10px 6px;
+}
+
+.form-label-group input:not(:placeholder-shown) ~ label,
+.form-label-group textarea:not(:placeholder-shown) ~ label {
+padding: 2px 10px;
+font-size: 13px;
+color: #7187f4;
+font-weight: 600;
+}
+
+/* Fallback for Edge
+-------------------------------------------------- */
+@supports (-ms-ime-align: auto) {
+.form-label-group > label {
+    display: none;
+    }
+.form-label-group input::-ms-input-placeholder,
+.form-label-group textarea::-ms-input-placeholder {
+    color: #7187f4;
+    font-weight: 600;
+    letter-spacing: .02rem;
+    }
+}
+
+/* Fallback for IE
+-------------------------------------------------- */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.form-label-group > label {
+    display: none;
+    }
+.form-label-group input:-ms-input-placeholder,
+.form-label-group textarea:-ms-input-placeholder {
+    color: #7187f4;
+    font-weight: 600;
+    }
+}
+  
+/* =============== CONTACT FORM - SEND BUTTON =============== */
+/* button link style */
+button.btn-cr-form {
+    font-size: 1.05rem;
+    color: #2f41c9;
+    padding: 11px 40px;
+    background-color: #e4e6eb;
+    font-weight: 600;
+    letter-spacing: .02rem;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+    border-bottom: 4px solid #bfccf7;
+}
+button.btn-cr-form:link {
+    text-decoration: none;
+}
+button.btn-cr-form:visited {
+    text-decoration: none;
+}
+button.btn-cr-form:hover {
+    text-decoration: none;
+    background-color: #2f41c9;
+    border-bottom: 4px solid #2f41c9;
+    color: #ffffff; 
+    box-shadow: 0px 8px 15px rgba(47, 65, 201, 0.3);
+   
+}
+button.btn-cr-form:active {
+    text-decoration: none;
+}
 
 /* ====== CASE STUDIES ====== */
  
