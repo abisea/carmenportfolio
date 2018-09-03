@@ -626,10 +626,10 @@ a.project-btn:active {
     color: #ffffff; 
 }
 
-/* =============== Punta Veleros =============== */
-#cr-pv .display-img { /* fallback img if gif anim takes longer to load */
+/* =============== Punta Veleros =============== fallback img if gif anim takes longer to load */
+/*#cr-pv .display-img { 
     background: url(../img/PV-main-img.jpg) center center / cover no-repeat;
-}
+}*/
 
 /* =============== DIGITAL + PRINT =============== */
 .hover-dp a {
@@ -740,6 +740,14 @@ figure {
     margin: 0 auto;
 }
 
+
+/* =============== PERSONAL =============== */
+@media screen and (max-width: 575px) {
+    #cr-pe .hover-dp {
+    max-width: 90%;
+    }
+} 
+
 /* =============== ABOUT =============== */
 p.cr-skills {
     font-size: .95rem;
@@ -756,11 +764,9 @@ p.cr-skills {
 
 @media screen and (max-width: 575px) {
     #cr-ab img {
-        max-width: 140px;
         padding-top: 20px;
     }
 }
-
 
 
 /* =============== CONTACT =============== */
