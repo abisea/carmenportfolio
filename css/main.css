@@ -750,25 +750,50 @@ figure {
 } 
 
 /* =============== ABOUT =============== */
-p.cr-skills {
-    font-size: .95rem;
+#cr-ab .cr-ab-text {
+    line-height: 1.4em;
+}
+/* my photo portrait*/
+#cr-ab img.cr-portrait {
+    max-width: 170px;
+    margin-right: 2em;
+}
+
+@media screen and (max-width: 575px) {
+    #cr-ab img.cr-portrait {
+        display: block;
+        padding-top: 20px;
+    }
+}
+/* skills */
+.skills-row {
+    padding: 20px 40px 30px 70px;
+}
+@media screen and (max-width: 767px) {
+    .skills-row {
+        padding: 0px 2% 30px 10%;
+    }
+}
+
+.skills-wrapper .skills-heading {
+    font-size: 1.25rem;
     line-height: 1.35rem;
     margin-top: 1rem;
     letter-spacing: .01em;
 }
-
-/* my photo portrait*/
-#cr-ab img {
-    max-width: 180px;
-    margin-top: 1rem;
+.skills-wrapper {
+    margin-bottom: 4em;
 }
-
 @media screen and (max-width: 575px) {
-    #cr-ab img {
-        padding-top: 20px;
+    .skills-wrapper {
+        margin-bottom: 3em;
     }
 }
-
+.skill-wrapper img {
+    max-width: 100%;
+    max-height: auto;
+}
+ 
 
 /* =============== CONTACT =============== */
 h3.sub-contact {
