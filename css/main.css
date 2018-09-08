@@ -716,7 +716,7 @@ figure {
 
 /* =============== LOGOFOLIO =============== */
 @media screen and (max-width: 575px) {
-    #cr-lo svg {
+    #cr-lo .logo-names {
         display: none;
     }
     #cr-lo .project-logo-wrapper {
@@ -731,9 +731,8 @@ figure {
     color: #a7abbe; 
     font-size: .85rem;
 }
-#cr-lo svg {
-    max-height: 210px;
-    margin-left: -10px;
+#cr-lo .logo-names {
+    max-height: 230px;
 }
 .project-logo-wrapper {
     padding: 100px 20px 5px 20px;
