@@ -169,8 +169,8 @@ i {
 
 /* =============== HEADER NAVBAR =============== */
 
-/* Extra-Small size screen */
-@media screen and (max-width: 575px) {
+/* Extra-Small & Small size screen */
+@media screen and (max-width: 767px) {
     body {
         margin: 0;
         padding: 0;
@@ -211,54 +211,6 @@ i {
         font-weight: 700;
         padding-right: 5%;
     }
-}
-
-/* Small size screen */
-@media screen and (min-width: 576px) {
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    header {
-        position: relative;
-    }
-    .cr-sidebar-wrapper {
-        background-color: #eeeff2;
-        z-index: 3000;
-        position: fixed;
-        top: 0;
-        left: 0;
-        height: 50px;
-        width: 100% !important;
-    }   
-    header .container {
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-    }
-    header .navbar {
-        padding: 0 !important;
-    }
-    header .cr-sidebar i {
-        background-color: #ffffff;
-        border-radius: 50%;
-        box-shadow: 2px 2px 3px rgba(47, 65, 201, 0.3);
-        color: #2f41c9;
-        height: 38px;
-        padding: 11px 12px 12px;
-        font-size: .85em;
-    }
-    header .cr-name-sidebar {
-        color: #2f41c9;
-        letter-spacing: .02em;
-        font-family: 'Playfair Display', serif;
-        text-transform: capitalize;
-        font-weight: 700;
-    }
-    header .navbar-brand img {
-        max-width: 20px;
-        margin-top: 4px;
-    }  
 }
 
 /* Medium size screen */
@@ -324,7 +276,7 @@ i {
         height: 100vh;
         width: 100vw;
         position: fixed;
-        padding: 15% 12% 5%;
+        padding: 10% 12% 5%;
         z-index: 2999;
     }
     header .cr-nav-list a {
@@ -369,7 +321,7 @@ i {
         height: 100vh;
         width: 100vw;
         position: fixed;
-        padding: 15% 12% 5%;
+        padding: 10% 12% 5%;
         z-index: 2999;
     }
     header .cr-nav-list a {
@@ -997,7 +949,21 @@ button.btn-cr-form:active {
 
 
 /* ====== CASE STUDIES ====== */
- 
+.casestudy-title {
+    background-color: #f8f8f9;
+    padding-top: 12px;
+} 
+.casestudy-title p {
+    font-size: 1rem;
+    color: #6d7597;
+} 
+.casestudy-title span.go-back-link {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #2f41c9;
+    padding-right: 20px;
+} 
+
 .casestudy-num {
     font-size: 3em;
     padding-top: 1em;
@@ -1010,11 +976,14 @@ button.btn-cr-form:active {
 }
 
 @media screen and (max-width: 767px) {
+    .casestudy-title span.go-back-link  {
+        display: none;
+    }
     .casestudy-mob {
         padding-left: 1em;
     }
     #cr-cs-oh {
-        margin-top: 3em;
+        margin-top: 2.5em;
     }
     #cr-cs-oh .project-text-wrapper {
         padding: 50px 2% 30px 10px;
@@ -1026,7 +995,7 @@ button.btn-cr-form:active {
         padding: 50px 2% 30px 10%;
     }
     #cr-cs-oh {
-        margin-top: 0;
+        margin-top: 2.5em;
     }
     .casestudy-num {
         padding-top: 0;
