@@ -80,9 +80,7 @@
                 <li><a href="//gitlab.com/carmenreategui" target="_blank"><i class="fa fa-gitlab"></i></a></li>
                 <li><a href="//github.com/abisea" target="_blank"><i class="fa fa-github" style="margin-left: 0.6em; margin-right: 0.6em; font-size: 1.15rem;"></i></a></li>        
                 <li><a href="//codepen.io/carmen-" target="_blank"><i class="fa fa-codepen" style="margin-right: .6em;"></i></a></li>
-                <button type="button" onclick="document.getElementById('cr-nav-me').innerHTML = 'for work & inquiries contact at:<br><span>info@carmenreategui.net</span>'">
-                  <li><i class="fa fa-envelope"></i></li></button>
-                  <a href="mailto:info@carmenreategui.net" target="_blank"><p id="cr-nav-me"></p></a>
+               
               </ul>
 						</div>
 					</div>					
@@ -573,21 +571,21 @@
     
               <div class="row">              
                 <div class="col-md-6 col-sm-12">
-                  <form class="cr-contact-form mt-3" action="https://formspree.io/info@carmenreategui.net" method="POST">
+                  <form class="cr-contact-form mt-3" >
                     <div class="form-label-group">
                       <input type="text" id="name" name="name" class="form-control" placeholder="Name" required>
                       <label for="name" class="">Name</label>
                     </div>
                     <div class="form-label-group">
-                      <input type="email" id="inputEmail" name="_replyto" class="form-control" placeholder="Email address" required>
+                      <input name="_replyto" class="form-control" placeholder="Email address" required>
                       <label for="inputEmail">Email address</label>
                     </div>
                     <div class="form-label-group">
                       <textarea type="text" id="message" rows="5" name="message" class="form-control md-textarea" placeholder="Message" required></textarea>
                       <label for="message">Message</label>
                     </div>
-                    <input type="hidden" name="_next" value="https://carmenreategui.net/contact-message.html" />
-                    <button class="btn btn-lg btn-cr-form" type="submit" value="Send">Send</button>
+                    <input type="hidden" name="_next" />
+                    
                   </form>
                 </div> <!-- ./col -->
                 
